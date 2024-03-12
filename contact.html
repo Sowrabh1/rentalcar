@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info img {
+            width: 50%;
+            height: auto;
+        }
+
+        .contact-details {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .contact-details h2 {
+            margin-top: 0;
+            color: #ff5a5f;
+        }
+
+        .contact-details p {
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #ff5a5f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #map {
+            width: 80%;
+            max-width: 800px;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                height: auto;
+            }
+            .contact-info {
+                flex-direction: column;
+            }
+            .contact-info img {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .contact-details,
+            .contact-form,
+            #map {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="contact-info">
+            <img src="assets/contactusimg.png" alt="Car Rental Image">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@carrental.com</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="map">
+            <!-- Google Maps API integration can be placed here -->
+            <!-- For demonstration purposes, a placeholder div is used -->
+            <p>Map showing the location of Car Rental Service</p>
+        </div>
+    </div>
+</body>
+</html>
